@@ -1,0 +1,10 @@
+<div class="container" style="text-align: center">
+  <h1>HD Transit</h1>
+  <label for="Nfact">num de facture :</label>
+  <input #num id="Nfact" type="number" /><br />
+  <label for="fact">facture :</label>
+  <input #fact id="fact" type="text" placeholder="facture" />
+  <br />
+  <button (click)="submit(num.value, fact.value)">submit</button>
+  <p>{{ message }}</p>
+</div>
